@@ -1,18 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Hotel logo" src="./assets/1.jpg">
-    <HelloWorld msg="Welcome to Hotel chain"/>
+    <!-- <img alt="Hotel logo" src="./assets/1.jpg"> -->
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
