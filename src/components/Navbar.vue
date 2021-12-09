@@ -6,8 +6,8 @@
         <vk-navbar-nav-item title="Main" href="/#/"></vk-navbar-nav-item>
         <vk-navbar-nav-dropdown title="Profile">
             <vk-navbar-nav-dropdown-nav>
-                <vk-nav-item title="My profile" active></vk-nav-item>
-                <vk-nav-item title="Bookings"></vk-nav-item>
+                <vk-nav-item title="My profile" href="/#/guestmain"></vk-nav-item>
+                <vk-nav-item title="Bookings" href="/#/history"></vk-nav-item>
             </vk-navbar-nav-dropdown-nav>
         </vk-navbar-nav-dropdown>
         <vk-navbar-nav-item title="Hotels" href="/#/Hotel1"></vk-navbar-nav-item>

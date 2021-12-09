@@ -4,7 +4,7 @@
 
   <vk-card class="uk-width-1-3@m uk-inline">
   <!-- <form @submit.prevent="signup"> -->
-    <form>
+    <form @submit.prevent="signup">
   <a slot="center"><img class="uk-width-1-1@s" src="../assets/2.jpg"></a>
     <h3 style="font-weight: bold;">Sign up</h3>
     <div class="uk-margin uk-width-1-1">
@@ -38,20 +38,20 @@ export default {
     }
   },
   methods: {
-    // signup() {
-    //   let api='https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyC_Ed2LUR4b2tvX4UHPRUa2qn_SmsTcHgU'
-    //   let email = this.email
-    //   let password = this.password
-    //   this.axios.post(api, {
-    //     email, password
-    //   }).then( (result) =>{
-    //     console.log(result)
-    //     this.$router.push('/')
-    //   }, (err) => {
-    //     this.errorlog = "Error! Email or UIN is not correct. Try again.",
-    //     console.log(err)
-    //   })
-    // }
+    signup() {
+      let api='https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBRgHXvvBlw2NBNvLfWTS-DRua0hYML6Us'
+      let email = this.email
+      let password = this.password
+      this.axios.post(api, {
+        email, password
+      }).then( (result) =>{
+        console.log(result)
+        this.$router.push('/')
+      }, (err) => {
+        this.errorlog = "Error! Email or UIN is not correct. Try again.",
+        console.log(err)
+      })
+    }
   }
 }
 </script>

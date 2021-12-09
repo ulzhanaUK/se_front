@@ -5,6 +5,9 @@ import Vuex from 'vuex'
 import Vuikit from 'vuikit'
 import VuikitIcons from '@vuikit/icons'
 import '@vuikit/theme'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
 
 Vue.use(Vuikit)
 Vue.use(VuikitIcons)
