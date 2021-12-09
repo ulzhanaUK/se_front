@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <!-- <img alt="Hotel logo" src="./assets/1.jpg"> -->
+    <Navbar />
     <router-view/>
   </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar"
 export default {
+  components: {
+    // Footer,
+    Navbar
+  },
   name: 'App'
 }
 </script>

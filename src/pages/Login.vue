@@ -1,6 +1,5 @@
 <template>
   <div class="uk-position-relative">
-    <Navbar />
     <center>
     <vk-card class="uk-width-1-3@m">
       <form class="login" @submit.prevent="login">
@@ -22,13 +21,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar"
-// import Footer from "@/components/partials/Footer"
 export default {
-  components: {
-    Navbar
-    // Footer
-  },
   data() {
     return {
       email: "",

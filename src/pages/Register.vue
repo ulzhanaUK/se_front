@@ -1,6 +1,5 @@
 <template>
  <div class="uk-position-relative">
-  <Navbar />
   <center>
 
   <vk-card class="uk-width-1-3@m uk-inline">
@@ -30,8 +29,6 @@
 
 <script>
 // import axios from 'axios';
-import Navbar from "@/components/Navbar"
-// import Footer from "@/components/partials/Footer"
 export default {
   data() {
     return {
@@ -55,10 +52,6 @@ export default {
     //     console.log(err)
     //   })
     // }
-  },
-  components: {
-    // Footer,
-    Navbar
   }
 }
 </script>

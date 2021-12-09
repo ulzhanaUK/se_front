@@ -2,6 +2,7 @@
 <vk-navbar>
     <vk-navbar-nav slot="left">
         <vk-navbar-nav-item title="Login" href="/#/loginPre"></vk-navbar-nav-item>
+        <vk-navbar-nav-item title="Register" href="/#/register"></vk-navbar-nav-item>
         <vk-navbar-nav-item title="Main" href="/#/"></vk-navbar-nav-item>
         <vk-navbar-nav-dropdown title="Profile">
             <vk-navbar-nav-dropdown-nav>
@@ -12,8 +13,7 @@
         <vk-navbar-nav-item title="Hotels" href="/#/Hotel1"></vk-navbar-nav-item>
     </vk-navbar-nav>
     <vk-navbar-nav slot="right">
-        <vk-navbar-logo slot="left" style="position: relative; left: 30%;"><a><img style="width: 30%;" src="../assets/logo.png"></a></vk-navbar-logo>
-        <vk-navbar-nav-item title="Register" href="/#/register"></vk-navbar-nav-item>
+        <vk-navbar-logo slot="left" href="/#/" style="position: relative; left: 30%;"><a><img style="width: 30%;" src="../assets/logo.png"></a></vk-navbar-logo>
     </vk-navbar-nav>
 </vk-navbar>
 </template>
