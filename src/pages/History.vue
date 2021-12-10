@@ -1,26 +1,6 @@
 <template>
 <div>
-    <!-- <div class="container">
-        <h3 class="p-3 text-center">Booking history</h3>
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Hotel</th>
-                    <th>Room type</th>
-                    <th>Check in</th>
-                    <th>Check out</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="hotel_history in hotel_historys" :key="hotel_history.id">
-                    <td>{{hotel_history.name}}</td>
-                    <td>{{hotel_history.room_type}}</td>
-                    <td>{{hotel_history.check_in}}</td>
-                    <td>{{hotel_history.check_out}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>  -->
+    <h4 style="color:red;">{{errorlog}}</h4>
     <center>
         <h3 style="font-weight: bold;">Booking History</h3>
     <vk-table :data="hotel_history" striped>
@@ -43,10 +23,29 @@ export default {
                 { id: '3', name: 'Hotel3', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
                 { id: '4', name: 'Hotel4', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
                 { id: '5', name: 'Hotel5', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' }
-            ]
+            ],
+            errorlog: ""
         };
+    },
+    methods: {
+    add_hotel() {
+      let api='http://localhost:8081/booking/:id'
+      let id = this.id
+      let room_type_name = this.room_type_name
+      let check_in = this.check_in
+      let check_out = this.check_out
+      this.axios.post(api, {
+        id, room_type_name, check_in, check_out
+      }).then( (result) =>{
+        console.log(result)
+        this.$router.push('/')
+      }, (err) => {
+        this.errorlog = "Error!",
+        console.log(err)
+      })
     }
-};
+  }
+}
 </script>
 <style scoped>
 

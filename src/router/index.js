@@ -10,6 +10,7 @@ const GuestMain = resolve => require(['@/pages/GuestMain.vue'], resolve)
 const GuestProfile = resolve => require(['@/pages/GuestProfile.vue'], resolve)
 const GuestResults = resolve => require(['@/pages/GuestResults.vue'], resolve)
 const History = resolve => require(['@/pages/History.vue'], resolve)
+const Edit_booking = resolve => require(['@/pages/Edit_booking.vue'], resolve)
 
 Vue.use(Router)
 
@@ -65,5 +66,10 @@ export default new Router({
       name: 'History',
       component: History
     },
+    {
+      path: '/editbooking',
+      name: 'Edit_booking',
+      component: Edit_booking
+    }
   ]
 })
