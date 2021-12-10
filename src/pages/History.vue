@@ -24,6 +24,7 @@
     <center>
         <h3 style="font-weight: bold;">Booking History</h3>
     <vk-table :data="hotel_history" striped>
+    <vk-table-column title="Id" cell="id"></vk-table-column>
   <vk-table-column title="Name" cell="name"></vk-table-column>
   <vk-table-column title="room type" cell="room_type"></vk-table-column>
   <vk-table-column title="Check in" cell="check_in"></vk-table-column>
@@ -37,11 +38,11 @@ export default {
     data() {
         return {
             hotel_history: [
-                { name: 'Hotel1', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
-                { name: 'Hotel2', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
-                { name: 'Hotel3', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
-                { name: 'Hotel4', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
-                { name: 'Hotel5', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' }
+                { id: '1', name: 'Hotel1', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
+                { id: '2', name: 'Hotel2', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
+                { id: '3', name: 'Hotel3', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
+                { id: '4', name: 'Hotel4', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' },
+                { id: '5', name: 'Hotel5', check_out: '11.12.2021', room_type: 'single', check_in: '10.02.2021' }
             ]
         };
     }
