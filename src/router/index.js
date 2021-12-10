@@ -11,7 +11,10 @@ const GuestProfile = resolve => require(['@/pages/GuestProfile.vue'], resolve)
 const GuestResults = resolve => require(['@/pages/GuestResults.vue'], resolve)
 const History = resolve => require(['@/pages/History.vue'], resolve)
 const Edit_booking = resolve => require(['@/pages/Edit_booking.vue'], resolve)
+const Manager = resolve => require(['@/pages/Manager.vue'], resolve)
 
+const LoginM = resolve => require(['@/pages/Login_manager.vue'], resolve)
+const LoginD = resolve => require(['@/pages/Login_desck.vue'], resolve)
 Vue.use(Router)
 
 export default new Router({
@@ -20,6 +23,21 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: Main
+    },
+    {
+      path: '/login_manager',
+      name: 'LoginM',
+      component: LoginM
+    },
+    {
+      path: '/manager',
+      name: 'Manager',
+      component: Manager
+    },
+    {
+      path: '/login_desck',
+      name: 'LoginD',
+      component: LoginD
     },
     {
       path: '/loginPre',

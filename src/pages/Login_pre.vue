@@ -4,8 +4,8 @@
         <vk-card class="uk-width-1-3@m">
             <h3 style="font-weight: bold;">LOG IN AS</h3>
             <vk-button style="background-color:#a6c4b1" class="uk-width-1-1 uk-margin-small-bottom" onclick="window.location.href='/#/login'">GUEST</vk-button>
-            <vk-button style="background-color:#a6c4b1" class="uk-width-1-1 uk-margin-small-bottom" onclick="window.location.href='/#/login'">DESK CLERK</vk-button>
-            <vk-button style="background-color:#a6c4b1" class="uk-width-1-1 uk-margin-small-bottom" onclick="window.location.href='/#/login'">MANAGER</vk-button>
+            <vk-button style="background-color:#a6c4b1" class="uk-width-1-1 uk-margin-small-bottom" onclick="window.location.href='/#/login_desck'">DESK CLERK</vk-button>
+            <vk-button style="background-color:#a6c4b1" class="uk-width-1-1 uk-margin-small-bottom" onclick="window.location.href='/#/login_manager'">MANAGER</vk-button>
         </vk-card>
     </center>
   </div>
